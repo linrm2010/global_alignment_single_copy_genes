@@ -9,7 +9,7 @@ if(@ARGV!=4)
 }
 
 # using the installed software 'muscle' for sequence alignment
-my $muscle="muscle";
+my $muscle="muscle"; # for muscle version of 3.8.31
 
 my %seq;
 my @list;
@@ -84,3 +84,4 @@ for(my $i=0;$i<@list;$i++)
 	print OUT "\>$list[$i]\n$align{$list[$i]}\n" if(defined $align{$list[$i]});
 }
 close OUT;
+
